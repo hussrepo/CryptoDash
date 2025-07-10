@@ -122,7 +122,7 @@ const App: React.FC = () => {
                                 userSelect: 'none'
                             }}
                         >
-                            Crypto Tracker
+                            CryptoDash
                         </Typography>
                         <Typography
                             variant="body2"
