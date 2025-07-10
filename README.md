@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# CryptoDash
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CryptoDash is a React-based web application that provides real-time cryptocurrency price tracking and visualization. The app, titled "Crypto Tracker", fetches data from the CoinGecko API and displays it in an interactive and visually appealing format using Material-UI and Recharts.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Real-Time Price Updates**: Automatically fetches and updates cryptocurrency prices every minute.
+- **Interactive Charts**: Displays historical price data for Bitcoin, Ethereum, DogeCoin, and Cardano using responsive line charts.
+- **Modern UI**: Built with Material-UI for a sleek, responsive design, and includes animations from Framer Motion.
+- **GitHub Integration**: Includes a link to my GitHub profile in the app header.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Frontend**: React, TypeScript
+- **Styling**: Material-UI (MUI), Framer Motion
+- **Charts**: Recharts
+- **API**: CoinGecko API
+- **HTTP Client**: Axios
+- **State Management**: React Hooks (`useState`, `useEffect`)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/hussrepo/CryptoDash.git
+    cd CryptoDash
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
 
-### `npm run build`
+3.  Start the development server:
+    ```bash
+    npm start
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4.  Open the app in your browser at `http://localhost:3000`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## File Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   `src/App.tsx`: Main application file that sets up the layout, fetches data, and renders components.
+-   `src/components/PriceChart.tsx`: Component for rendering interactive line charts of cryptocurrency prices.
 
-### `npm run eject`
+## API Integration
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The app uses the [CoinGecko API](https://www.coingecko.com/en/api) to fetch historical price data for the following cryptocurrencies:
+-   Bitcoin
+-   Ethereum
+-   DogeCoin
+-   Cardano
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The API requests are made using Axios, and the data is processed to extract relevant price information for chart rendering.
