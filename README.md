@@ -1,6 +1,6 @@
 # CryptoDash
 
-CryptoDash is a React-based web application that provides real-time cryptocurrency price tracking and visualization. The app, titled "Crypto Tracker", fetches data from the CoinGecko API and displays it in an interactive and visually appealing format using Material-UI and Recharts.
+CryptoDash is a React-based web application that provides real-time cryptocurrency price tracking and visualization. The app fetches data from the CoinGecko API and displays it in an interactive and visually appealing format using Material-UI and Recharts.
 
 ## Features
 
