@@ -1,0 +1,4 @@
+Planned Implementations:
+- Address API Error when page is refreshed quickly
+- Add a loading state to the UI in case of slow API responses
+- Categorize Crypto Currencies for future implementations of more Crypto Currencies
