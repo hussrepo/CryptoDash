@@ -2,3 +2,7 @@ Planned Implementations:
 - Address API Error when page is refreshed quickly
 - Add a loading state to the UI in case of slow API responses
 - Categorize Crypto Currencies for future implementations of more Crypto Currencies
+
+Implementation Ideas:
+- Implement a search feature to find specific Crypto Currencies
+- Implement a filter feature to show only top gainers or losers
